@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+server:
+  port: 8080
+
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.puxinwangxiao.erp.dao.entity,com.puxinwangxiao.erp.core.entity
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+swagger:
+  enable: true
